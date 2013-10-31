@@ -24,5 +24,7 @@ jsdom.env("<svg></svg>", scripts, function(errors, window) {
       write('<?xml version="1.0" standalone="yes"?>');
       // then "serialize" using outerHTML
       write(node.outerHTML);
+
+      window.close();
     });
 });
